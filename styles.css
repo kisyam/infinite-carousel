@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.carousel-container {
+  width: 500px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+}
+
+.carousel-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide-controls {
+  position: absolute;
+  padding: 0px 5px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#prevBtn,
+#nextBtn {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 20px;
+}
