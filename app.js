@@ -26,14 +26,14 @@ carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 
 nextButton.addEventListener("click", () => {
   if (counter >= carouselImages.length - 1) return;
-  carouselSlide.style.transition = "transform 0.6s ease-in-out";
+  carouselSlide.style.transition = "transform 0.4s ease-in-out";
   counter += 1;
   carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 });
 
 prevButton.addEventListener("click", () => {
   if (counter <= 0) return;
-  carouselSlide.style.transition = "transform 0.6s ease-in-out";
+  carouselSlide.style.transition = "transform 0.4s ease-in-out";
   counter -= 1;
   carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
   console.log(counter);
